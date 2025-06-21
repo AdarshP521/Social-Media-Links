@@ -1,24 +1,17 @@
 
 import ProfileHeader from "@/components/ProfileHeader";
 import SocialCard from "@/components/SocialCard";
-import { Instagram, Linkedin, Twitter, Youtube, Facebook } from "lucide-react";
+import { Instagram, Linkedin, Twitter, Youtube, Facebook, Mail, Globe, Briefcase } from "lucide-react";
 
 const Index = () => {
-  // You can customize these with your actual social media details
+  // Updated social links with all 8 requested platforms
   const socialLinks = [
     {
-      platform: "Instagram",
-      username: "yourusername",
-      url: "https://instagram.com/yourusername",
-      icon: <Instagram className="w-8 h-8" />,
-      color: "bg-gradient-to-r from-purple-500 to-pink-500",
-    },
-    {
-      platform: "Twitter",
-      username: "yourusername",
-      url: "https://twitter.com/yourusername",
-      icon: <Twitter className="w-8 h-8" />,
-      color: "bg-gradient-to-r from-blue-400 to-blue-600",
+      platform: "Portfolio",
+      username: "View My Work",
+      url: "https://yourportfolio.com",
+      icon: <Briefcase className="w-8 h-8" />,
+      color: "bg-gradient-to-r from-gray-600 to-blue-600",
     },
     {
       platform: "LinkedIn",
@@ -28,6 +21,13 @@ const Index = () => {
       color: "bg-gradient-to-r from-blue-600 to-blue-800",
     },
     {
+      platform: "Website",
+      username: "Visit Site",
+      url: "https://yourwebsite.com",
+      icon: <Globe className="w-8 h-8" />,
+      color: "bg-gradient-to-r from-teal-500 to-green-500",
+    },
+    {
       platform: "YouTube",
       username: "yourusername",
       url: "https://youtube.com/@yourusername",
@@ -35,11 +35,32 @@ const Index = () => {
       color: "bg-gradient-to-r from-red-500 to-red-600",
     },
     {
+      platform: "Instagram",
+      username: "yourusername",
+      url: "https://instagram.com/yourusername",
+      icon: <Instagram className="w-8 h-8" />,
+      color: "bg-gradient-to-r from-purple-500 to-pink-500",
+    },
+    {
       platform: "Facebook",
       username: "yourusername",
       url: "https://facebook.com/yourusername",
       icon: <Facebook className="w-8 h-8" />,
       color: "bg-gradient-to-r from-blue-500 to-indigo-600",
+    },
+    {
+      platform: "Twitter",
+      username: "yourusername",
+      url: "https://twitter.com/yourusername",
+      icon: <Twitter className="w-8 h-8" />,
+      color: "bg-gradient-to-r from-blue-400 to-blue-600",
+    },
+    {
+      platform: "Email",
+      username: "Contact Me",
+      url: "mailto:your.email@example.com",
+      icon: <Mail className="w-8 h-8" />,
+      color: "bg-gradient-to-r from-orange-500 to-red-500",
     },
   ];
 
