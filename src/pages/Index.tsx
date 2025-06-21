@@ -11,8 +11,8 @@ const Index = () => {
     color: "bg-gradient-to-r from-gray-600 to-blue-600"
   }, {
     platform: "LinkedIn",
-    username: "yourusername",
-    url: "https://linkedin.com/in/yourusername",
+    username: "pandeyadarsh521",
+    url: "https://linkedin.com/in/pandeyadarsh521",
     icon: <Linkedin className="w-8 h-8" />,
     color: "bg-gradient-to-r from-blue-600 to-blue-800"
   }, {
@@ -23,32 +23,32 @@ const Index = () => {
     color: "bg-gradient-to-r from-teal-500 to-green-500"
   }, {
     platform: "YouTube",
-    username: "yourusername",
-    url: "https://youtube.com/@yourusername",
+    username: "pandeyadarsh521",
+    url: "https://youtube.com/@pandeyadarsh521",
     icon: <Youtube className="w-8 h-8" />,
     color: "bg-gradient-to-r from-red-500 to-red-600"
   }, {
     platform: "Instagram",
-    username: "yourusername",
-    url: "https://instagram.com/yourusername",
+    username: "pandeyadarsh521",
+    url: "https://instagram.com/pandeyadarsh521",
     icon: <Instagram className="w-8 h-8" />,
     color: "bg-gradient-to-r from-purple-500 to-pink-500"
   }, {
     platform: "Facebook",
-    username: "yourusername",
-    url: "https://facebook.com/yourusername",
+    username: "pandeyadarsh521",
+    url: "https://facebook.com/pandeyadarsh521",
     icon: <Facebook className="w-8 h-8" />,
     color: "bg-gradient-to-r from-blue-500 to-indigo-600"
   }, {
     platform: "Twitter",
-    username: "yourusername",
-    url: "https://twitter.com/yourusername",
+    username: "pandeyadarsh521",
+    url: "https://twitter.com/pandeyadarsh521",
     icon: <Twitter className="w-8 h-8" />,
     color: "bg-gradient-to-r from-blue-400 to-blue-600"
   }, {
     platform: "Email",
     username: "Contact Me",
-    url: "mailto:your.email@example.com",
+    url: "mailto:pandeyadarsh521@example.com",
     icon: <Mail className="w-8 h-8" />,
     color: "bg-gradient-to-r from-orange-500 to-red-500"
   }];
