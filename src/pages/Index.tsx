@@ -65,7 +65,7 @@ const Index = () => {
       </div>
 
       <div className="relative z-10 container mx-auto px-4 py-12">
-        <ProfileHeader name="Your Name" bio="Content Creator | Digital Enthusiast | Follow me for awesome content!" />
+        <ProfileHeader name="Your Name" bio="Tech Video Creator | Frontend Developer | Graphic Designer | UI/UX & Product Designer" />
         
         <div className="max-w-2xl mx-auto space-y-4">
           {socialLinks.map((social, index) => <SocialCard key={social.platform} platform={social.platform} username={social.username} url={social.url} icon={social.icon} color={social.color} />)}
