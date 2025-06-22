@@ -1,15 +1,14 @@
 
-
 import ProfileHeader from "@/components/ProfileHeader";
 import SocialCard from "@/components/SocialCard";
 import { Instagram, Linkedin, Twitter, Youtube, Facebook, Mail, Globe, Briefcase, Github } from "lucide-react";
 
 const Index = () => {
-  // Updated social links with GitHub added after Twitter
+  // Updated social links with correct portfolio URL
   const socialLinks = [{
     platform: "Portfolio",
     username: "View My Work",
-    url: "https://yourportfolio.com",
+    url: "https://pandey-adarsh.lovable.app/",
     icon: <Briefcase className="w-8 h-8" />,
     color: "bg-gradient-to-r from-gray-600 to-blue-600"
   }, {
@@ -62,32 +61,35 @@ const Index = () => {
     color: "bg-gradient-to-r from-orange-500 to-red-500"
   }];
 
-  return <div className="min-h-screen bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-800">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-yellow-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse" style={{
-        animationDelay: '2s'
-      }}></div>
-        <div className="absolute top-40 left-1/2 w-80 h-80 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse" style={{
-        animationDelay: '4s'
-      }}></div>
-      </div>
-
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
       <div className="relative z-10 container mx-auto px-4 py-12">
-        <ProfileHeader name="Pandey Adarsh" bio="Tech Video Creator | Frontend Developer | Graphic Designer | UI/UX & Product Designer" />
+        <ProfileHeader 
+          name="Pandey Adarsh" 
+          bio="Tech Video Creator | Frontend Developer | Graphic Designer | UI/UX & Product Designer"
+          avatar="/lovable-uploads/17d1d30c-812f-4872-aff7-0729a954fbff.png"
+        />
         
         <div className="max-w-2xl mx-auto space-y-4">
-          {socialLinks.map((social, index) => <SocialCard key={social.platform} platform={social.platform} username={social.username} url={social.url} icon={social.icon} color={social.color} />)}
+          {socialLinks.map((social, index) => (
+            <SocialCard 
+              key={social.platform} 
+              platform={social.platform} 
+              username={social.username} 
+              url={social.url} 
+              icon={social.icon} 
+              color={social.color} 
+            />
+          ))}
         </div>
 
         {/* Footer */}
-        <div className="text-center mt-12 text-purple-100">
-          <p className="text-sm opacity-80">Developed And Design By - Pandey Adarsh</p>
+        <div className="text-center mt-12 text-slate-600">
+          <p className="text-sm">Developed And Design By - Pandey Adarsh</p>
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
 
 export default Index;
-
