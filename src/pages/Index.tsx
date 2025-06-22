@@ -1,8 +1,10 @@
+
 import ProfileHeader from "@/components/ProfileHeader";
 import SocialCard from "@/components/SocialCard";
-import { Instagram, Linkedin, Twitter, Youtube, Facebook, Mail, Globe, Briefcase } from "lucide-react";
+import { Instagram, Linkedin, Twitter, Youtube, Facebook, Mail, Globe, Briefcase, Github } from "lucide-react";
+
 const Index = () => {
-  // Updated social links with all 8 requested platforms
+  // Updated social links with GitHub added after Twitter
   const socialLinks = [{
     platform: "Portfolio",
     username: "View My Work",
@@ -46,12 +48,19 @@ const Index = () => {
     icon: <Twitter className="w-8 h-8" />,
     color: "bg-gradient-to-r from-blue-400 to-blue-600"
   }, {
+    platform: "GitHub",
+    username: "pandeyadarsh521",
+    url: "https://github.com/pandeyadarsh521",
+    icon: <Github className="w-8 h-8" />,
+    color: "bg-gradient-to-r from-gray-700 to-gray-900"
+  }, {
     platform: "Email",
     username: "Contact Me",
     url: "mailto:pandeyadarsh521@example.com",
     icon: <Mail className="w-8 h-8" />,
     color: "bg-gradient-to-r from-orange-500 to-red-500"
   }];
+
   return <div className="min-h-screen bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-800">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -65,7 +74,7 @@ const Index = () => {
       </div>
 
       <div className="relative z-10 container mx-auto px-4 py-12">
-        <ProfileHeader name="Your Name" bio="Tech Video Creator | Frontend Developer | Graphic Designer | UI/UX & Product Designer" />
+        <ProfileHeader name="Pandey Adarsh" bio="Tech Video Creator | Frontend Developer | Graphic Designer | UI/UX & Product Designer" />
         
         <div className="max-w-2xl mx-auto space-y-4">
           {socialLinks.map((social, index) => <SocialCard key={social.platform} platform={social.platform} username={social.username} url={social.url} icon={social.icon} color={social.color} />)}
@@ -78,4 +87,5 @@ const Index = () => {
       </div>
     </div>;
 };
+
 export default Index;
