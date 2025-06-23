@@ -1,8 +1,6 @@
-
 import ProfileHeader from "@/components/ProfileHeader";
 import SocialCard from "@/components/SocialCard";
 import { Instagram, Linkedin, Twitter, Youtube, Facebook, Mail, Globe, Briefcase, Github } from "lucide-react";
-
 const Index = () => {
   // Updated social links with correct portfolio URL
   const socialLinks = [{
@@ -60,29 +58,54 @@ const Index = () => {
     icon: <Mail className="w-8 h-8" />,
     color: "bg-gradient-to-r from-orange-500 to-red-500"
   }];
-
-  return (
-    <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-purple-400 via-pink-500 to-red-500">
+  return <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-purple-400 via-pink-500 to-red-500">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Floating Circles */}
-        <div className="absolute top-10 left-10 w-20 h-20 bg-yellow-300 rounded-full opacity-70 animate-bounce" style={{ animationDelay: '0s', animationDuration: '3s' }}></div>
-        <div className="absolute top-32 right-20 w-16 h-16 bg-blue-300 rounded-full opacity-60 animate-bounce" style={{ animationDelay: '1s', animationDuration: '4s' }}></div>
-        <div className="absolute bottom-20 left-32 w-24 h-24 bg-green-300 rounded-full opacity-50 animate-bounce" style={{ animationDelay: '2s', animationDuration: '5s' }}></div>
-        <div className="absolute bottom-40 right-10 w-18 h-18 bg-pink-300 rounded-full opacity-65 animate-bounce" style={{ animationDelay: '0.5s', animationDuration: '3.5s' }}></div>
+        <div className="absolute top-10 left-10 w-20 h-20 bg-yellow-300 rounded-full opacity-70 animate-bounce" style={{
+        animationDelay: '0s',
+        animationDuration: '3s'
+      }}></div>
+        <div className="absolute top-32 right-20 w-16 h-16 bg-blue-300 rounded-full opacity-60 animate-bounce" style={{
+        animationDelay: '1s',
+        animationDuration: '4s'
+      }}></div>
+        <div className="absolute bottom-20 left-32 w-24 h-24 bg-green-300 rounded-full opacity-50 animate-bounce" style={{
+        animationDelay: '2s',
+        animationDuration: '5s'
+      }}></div>
+        <div className="absolute bottom-40 right-10 w-18 h-18 bg-pink-300 rounded-full opacity-65 animate-bounce" style={{
+        animationDelay: '0.5s',
+        animationDuration: '3.5s'
+      }}></div>
         
         {/* Floating Squares */}
-        <div className="absolute top-1/4 left-1/4 w-12 h-12 bg-orange-300 opacity-40 animate-spin" style={{ animationDuration: '8s' }}></div>
-        <div className="absolute top-3/4 right-1/4 w-14 h-14 bg-teal-300 opacity-50 animate-spin" style={{ animationDuration: '6s', animationDirection: 'reverse' }}></div>
+        <div className="absolute top-1/4 left-1/4 w-12 h-12 bg-orange-300 opacity-40 animate-spin" style={{
+        animationDuration: '8s'
+      }}></div>
+        <div className="absolute top-3/4 right-1/4 w-14 h-14 bg-teal-300 opacity-50 animate-spin" style={{
+        animationDuration: '6s',
+        animationDirection: 'reverse'
+      }}></div>
         
         {/* Moving Gradient Orbs */}
-        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-r from-cyan-300 to-blue-400 rounded-full opacity-20 animate-pulse blur-3xl" style={{ animationDuration: '4s' }}></div>
-        <div className="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-r from-purple-300 to-pink-400 rounded-full opacity-25 animate-pulse blur-3xl" style={{ animationDuration: '6s' }}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-yellow-300 to-orange-400 rounded-full opacity-15 animate-pulse blur-3xl" style={{ animationDuration: '5s' }}></div>
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-r from-cyan-300 to-blue-400 rounded-full opacity-20 animate-pulse blur-3xl" style={{
+        animationDuration: '4s'
+      }}></div>
+        <div className="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-r from-purple-300 to-pink-400 rounded-full opacity-25 animate-pulse blur-3xl" style={{
+        animationDuration: '6s'
+      }}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-yellow-300 to-orange-400 rounded-full opacity-15 animate-pulse blur-3xl" style={{
+        animationDuration: '5s'
+      }}></div>
         
         {/* Animated Lines */}
-        <div className="absolute top-0 left-1/3 w-1 h-full bg-gradient-to-b from-transparent via-white to-transparent opacity-20 animate-pulse" style={{ animationDuration: '3s' }}></div>
-        <div className="absolute top-0 right-1/3 w-1 h-full bg-gradient-to-b from-transparent via-white to-transparent opacity-15 animate-pulse" style={{ animationDuration: '4s' }}></div>
+        <div className="absolute top-0 left-1/3 w-1 h-full bg-gradient-to-b from-transparent via-white to-transparent opacity-20 animate-pulse" style={{
+        animationDuration: '3s'
+      }}></div>
+        <div className="absolute top-0 right-1/3 w-1 h-full bg-gradient-to-b from-transparent via-white to-transparent opacity-15 animate-pulse" style={{
+        animationDuration: '4s'
+      }}></div>
       </div>
 
       {/* Glass overlay for better readability */}
@@ -90,34 +113,12 @@ const Index = () => {
       
       <div className="relative z-10 container mx-auto px-4 py-12">
         {/* Hero Image */}
-        <div className="text-center mb-8">
-          <div className="relative inline-block">
-            <img
-              src="/lovable-uploads/74298ee8-bb0a-41cb-93ba-1bc28e8c7b95.png"
-              alt="Pandey Adarsh with tech tools"
-              className="w-80 h-80 object-cover rounded-3xl shadow-2xl border-4 border-white/30 backdrop-blur-sm animate-fade-in hover:scale-105 transition-all duration-500"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-3xl"></div>
-          </div>
-        </div>
+        
 
-        <ProfileHeader 
-          name="Pandey Adarsh" 
-          bio="Tech Video Creator | Frontend Developer | Graphic Designer | UI/UX & Product Designer"
-          avatar="/lovable-uploads/17d1d30c-812f-4872-aff7-0729a954fbff.png"
-        />
+        <ProfileHeader name="Pandey Adarsh" bio="Tech Video Creator | Frontend Developer | Graphic Designer | UI/UX & Product Designer" avatar="/lovable-uploads/17d1d30c-812f-4872-aff7-0729a954fbff.png" />
         
         <div className="max-w-2xl mx-auto space-y-4">
-          {socialLinks.map((social, index) => (
-            <SocialCard 
-              key={social.platform} 
-              platform={social.platform} 
-              username={social.username} 
-              url={social.url} 
-              icon={social.icon} 
-              color={social.color} 
-            />
-          ))}
+          {socialLinks.map((social, index) => <SocialCard key={social.platform} platform={social.platform} username={social.username} url={social.url} icon={social.icon} color={social.color} />)}
         </div>
 
         {/* Footer */}
@@ -127,8 +128,6 @@ const Index = () => {
           </p>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
