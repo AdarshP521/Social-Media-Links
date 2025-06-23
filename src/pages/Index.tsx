@@ -6,7 +6,7 @@ const Index = () => {
   const socialLinks = [{
     platform: "Portfolio",
     username: "View My Work",
-    url: "https://pandey-adarsh.lovable.app/",
+    url: "https://pandeyadarsh.framer.ai/",
     icon: <Briefcase className="w-8 h-8" />,
     color: "bg-gradient-to-r from-gray-600 to-blue-600"
   }, {
